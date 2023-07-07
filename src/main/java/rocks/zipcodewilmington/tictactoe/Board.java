@@ -87,7 +87,7 @@ public class Board {
     }
 
         public Boolean isTie() {
-        if ((isInFavorOfO() == true && isInFavorOfX() == true) || (isInFavorOfO() == false && isInFavorOfO() == false)) {
+        if ((isInFavorOfO() == true && isInFavorOfX() == true) || (isInFavorOfO() == false && isInFavorOfX() == false)) {
             return true;
         }
         else {
@@ -96,12 +96,9 @@ public class Board {
     }
 
     public String getWinner() {
-//        if (isInFavorOfO() == true && isInFavorOfX() == false) {
-//            System.out.println(getWinner());
-//        } else if (isInFavorOfX() == true && isInFavorOfO() == false) {
-//            System.out.println(getWinner());
-//        }
-       return null;
+        if ((isInFavorOfO() == true && isInFavorOfX() == false) || (isInFavorOfX() == true && isInFavorOfO() == false)) {
+
+        }
     }
 
 }
