@@ -96,9 +96,11 @@ public class Board {
     }
 
     public String getWinner() {
-        if ((isInFavorOfO() == true && isInFavorOfX() == false) || (isInFavorOfX() == true && isInFavorOfO() == false)) {
-
-        }
+        if (isInFavorOfO()) {
+            return "O";
+        } else if (isInFavorOfX()) {
+            return "X";
+        } return "";
     }
 
 }
